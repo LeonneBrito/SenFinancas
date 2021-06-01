@@ -26,6 +26,7 @@ export function TransactionTable() {
         </thead>
         <tbody>
           {transactions
+            // eslint-disable-next-line array-callback-return
             .filter(val => {
               if (filter === "") {
                 return val;
